@@ -1,21 +1,34 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package busca.em.profundidade.iterativa;
 
-/**
- *
- * @author csacl
- */
+import busca.em.profundidade.iterativa.util.Arvore;
+import busca.em.profundidade.iterativa.util.Entry;
+
 public class BuscaEmProfundidadeIterativa {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Arvore arvore = new Arvore();
+        
+        System.out.println(arvore.insert(new Entry(10, "Um")));
+        System.out.println(arvore.insert(new Entry(5, "Dois")));
+        System.out.println(arvore.insert(new Entry(15, "Três")));
+        System.out.println(arvore.insert(new Entry(3, "Quatro")));
+        System.out.println(arvore.insert(new Entry(7, "cinco")));
+        System.out.println(arvore.insert(new Entry(13, "Seis")));
+        System.out.println(arvore.insert(new Entry(17, "Sete")));
+        System.out.println(arvore.insert(new Entry(4, "Oito")));
+        System.out.println(arvore.insert(new Entry(2, "Nove")));
+        System.out.println(arvore.insert(new Entry(1, "Dez")));
+        System.out.println(arvore.insert(new Entry(3, "Onze")));
+        System.out.println(arvore.insert(new Entry(12, "Doze")));
+        System.out.println(arvore.insert(new Entry(13, "Treze")));
+        System.out.println(arvore.insert(new Entry(14, "Quatorze")));
+        System.out.println(arvore.insert(new Entry(18, "Quize")));
+        System.out.println(arvore.insert(new Entry(16, "Dezesseis")));
+        
+        //arvore.buscaProfundidade(18);
+        //System.out.println("ENCONTREI "+ arvore.buscaEmProfundiadeLimitada(18, 3));
+        System.out.println("ENCONTREI "+ arvore.buscaProfundidadeIterativa(18, 3));
+        
     }
     
 }
