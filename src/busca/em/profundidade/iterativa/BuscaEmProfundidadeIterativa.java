@@ -8,26 +8,26 @@ public class BuscaEmProfundidadeIterativa {
     public static void main(String[] args) {
         Arvore arvore = new Arvore();
         
-        System.out.println(arvore.insert(new Entry(10, "Um")));
-        System.out.println(arvore.insert(new Entry(5, "Dois")));
-        System.out.println(arvore.insert(new Entry(15, "Três")));
-        System.out.println(arvore.insert(new Entry(3, "Quatro")));
-        System.out.println(arvore.insert(new Entry(7, "cinco")));
-        System.out.println(arvore.insert(new Entry(13, "Seis")));
-        System.out.println(arvore.insert(new Entry(17, "Sete")));
-        System.out.println(arvore.insert(new Entry(4, "Oito")));
-        System.out.println(arvore.insert(new Entry(2, "Nove")));
-        System.out.println(arvore.insert(new Entry(1, "Dez")));
-        System.out.println(arvore.insert(new Entry(3, "Onze")));
-        System.out.println(arvore.insert(new Entry(12, "Doze")));
-        System.out.println(arvore.insert(new Entry(13, "Treze")));
-        System.out.println(arvore.insert(new Entry(14, "Quatorze")));
-        System.out.println(arvore.insert(new Entry(18, "Quize")));
-        System.out.println(arvore.insert(new Entry(16, "Dezesseis")));
+        arvore.insert(new Entry(10, "1"));
+        arvore.insert(new Entry(5, "2"));
+        arvore.insert(new Entry(15, "3"));
+        arvore.insert(new Entry(3, "4"));
+        arvore.insert(new Entry(7, "5"));
+        arvore.insert(new Entry(13, "6"));
+        arvore.insert(new Entry(17, "7"));
+        arvore.insert(new Entry(4, "8"));
+        arvore.insert(new Entry(2, "9"));
+        arvore.insert(new Entry(1, "10"));
+        arvore.insert(new Entry(3, "11"));
+        arvore.insert(new Entry(12, "12"));
+        arvore.insert(new Entry(13, "13"));
+        arvore.insert(new Entry(14, "14"));
+        arvore.insert(new Entry(18, "15"));
+        arvore.insert(new Entry(16, "16"));
         
         //arvore.buscaProfundidade(18);
         //System.out.println("ENCONTREI "+ arvore.buscaEmProfundiadeLimitada(18, 3));
-        System.out.println("ENCONTREI "+ arvore.buscaProfundidadeIterativa(18, 3));
+        System.out.println("ENCONTREI "+ arvore.buscaProfundidadeIterativa(18, 4));
         
     }
     

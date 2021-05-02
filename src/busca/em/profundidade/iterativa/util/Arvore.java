@@ -1,5 +1,4 @@
 package busca.em.profundidade.iterativa.util;
-import java.util.TreeSet;
 
 public class Arvore{
     private final Node raiz;
@@ -114,14 +113,6 @@ public class Arvore{
         
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
     
     private class Node {
         private Entry conteudo;
